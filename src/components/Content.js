@@ -1,11 +1,15 @@
 import React from 'react';
+import LeaderBoard from './LeaderBoard';
+import History from './History';
+import leaders from '../data/leaders';
 
-const Content = function App() {
+function Content() {
   return (
     <div>
-      Content
+      <History leaders={ leaders } />
+      <LeaderBoard leaders={ leaders } />
     </div>
   );
-};
+}
 
 export default Content;

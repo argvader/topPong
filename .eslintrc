@@ -1,0 +1,57 @@
+extends:
+  - airbnb
+  - plugin:flowtype/recommended
+
+parser: babel-eslint
+
+plugins:
+  - class-property
+  - flowtype
+
+globals:
+  window: true
+  parent: true
+  document: true
+  SharedWorker: true
+
+env:
+  jest: true
+
+rules:
+  no-underscore-dangle:
+    - error
+    - allow:
+      - _snippetResult
+  class-property/class-property-semicolon:
+    - error
+    - always
+  comma-dangle:
+    - error
+    - never
+  object-curly-spacing:
+    - error
+    - always
+    - objectsInObjects: false
+  react/jsx-curly-spacing:
+    - warn
+    - always
+  react/jsx-filename-extension:
+    - error
+    - extensions: [".js", ".jsx"]
+  react/jsx-closing-bracket-location:
+    - warn
+    - after-props
+  react/sort-comp:
+    - warn
+    - order: [
+      "type-annotations",
+      "static-methods",
+      "lifecycle",
+      "render",
+      "everything-else",
+      "'/^handle.+$/'"
+    ]
+  max-len:
+    - error
+    - 180
+    - 2

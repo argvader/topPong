@@ -14,6 +14,7 @@ function Player(props) {
 
 Player.propTypes = {
   player: React.PropTypes.shape({
+    id: React.PropTypes.string,
     name: React.PropTypes.string,
     wins: React.PropTypes.number
   }).isRequired

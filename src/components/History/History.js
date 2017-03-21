@@ -29,7 +29,6 @@ class History extends Component {
   }
 
   handleTimer = () => {
-    console.log('time');
     if (this.state.runTimer) {
       this.props.addWin();
     }

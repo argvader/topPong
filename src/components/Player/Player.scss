@@ -1,0 +1,12 @@
+.player {
+  position: relative;
+  height: 100%;
+  padding: 0 3px;
+  line-height: inherit;
+
+  aside {
+    position: absolute;
+    right: 2px;
+    top: 0;
+  }
+}

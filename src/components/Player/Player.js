@@ -1,9 +1,10 @@
 import React from 'react';
+import styles from './Player.scss';
 
 function Player(props) {
   const { player } = props;
   return (
-    <article>
+    <article className={ styles.player }>
       { player.name }
       <aside>
         { player.wins }

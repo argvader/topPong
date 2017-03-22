@@ -51,7 +51,7 @@ const rules = [
     ]
   },
   {
-    test: /\.jpe?g$|\.gif$|\.png$/i,
+    test: /\.jpe?g$|\.gif$|\.png$|\.svg$/i,
     loader: 'file-loader?name=img/[name].[ext]'
   }
 ];

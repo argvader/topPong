@@ -1,0 +1,22 @@
+.leaderboard {
+  input {
+    width: 414px;
+    margin: 0 auto;
+    padding: 6px 3px;
+  }
+  ul {
+    padding: 0;
+    margin: 25px 0 0 0;
+    position: relative;
+    list-style-type: none;
+    li {
+      height: 30px;
+      width: 100%;
+      background: green;
+      border: 1px solid #222;
+      position: absolute;
+      transition: top 1s ease;
+      line-height: 30px;
+    }
+  }
+}

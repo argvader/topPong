@@ -35,7 +35,7 @@ function LeaderBoard(props) {
         onKeyDown={ handleNewPlayer } />
       <ul>
         { byWins(leaders).map((player, idx) => (
-          <li key={ player.id } style={ { top: `${idx * 35}px` } }>
+          <li key={ player.id } style={ { top: `${idx * 55}px` } }>
             <Player player={ player } />
           </li>
         ))}

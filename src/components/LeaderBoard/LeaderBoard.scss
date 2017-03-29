@@ -3,6 +3,14 @@
     width: 414px;
     margin: 0 auto;
     padding: 6px 3px;
+    color: #fff;
+    font-size: 1.4em;
+    border: 2px solid #deefff;
+    background-color: #c79810;
+    &::-webkit-input-placeholder {
+      color: #777;
+      text-indent: 3px;
+    }
   }
   ul {
     padding: 0;
@@ -10,13 +18,15 @@
     position: relative;
     list-style-type: none;
     li {
-      height: 30px;
+      height: 55px;
       width: 100%;
-      background: green;
+      font-size: 1.2em;
+      color: #444;
+      background: linear-gradient(to bottom, #deefff 0%,#98bede 100%);
       border: 1px solid #222;
       position: absolute;
       transition: top 1s ease;
-      line-height: 30px;
+      line-height: 55px;
     }
   }
 }
